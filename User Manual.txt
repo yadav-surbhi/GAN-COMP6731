@@ -1,0 +1,70 @@
+The aim of this project is to develop a GAN model. The datasets used are:
+
+MNIST
+CIFAR10
+This project contains the following component:
+
+Main.py
+DataManager.py
+Discriminator.py
+Generator.py
+Gan.py
+report.py
+
+To train the GAN model perform the following steps:
+
+In terminal locate the project folder
+Execute the Main.py file using command 
+
+>> python3 Main.py
+
+
+Then type in the dataset name which you like to train
+
+>> MNIST 
+
+or
+
+>> CIFAR
+
+all in capital letters
+
+If there is no pre-trained model existed inside of Models folder, then the program will start to train a brand new model, otherwise it will pickup the training process from where it stops.
+The training process will save the trained model weight after each epoch. 
+It will continue the training until you manually terminate it by pressing Ctrl-c
+During the training, it will create some progress images to show the current result.
+All the image pictures will be located in one subfolder of folder Images which the subfolder name corresponds to the Dataset name.
+
+
+To generate the report run the following command in terminal: 
+
+>> python3 report.py
+
+Then type in the dataset name which you like to see the current result
+
+>> MNIST 
+
+or
+
+>> CIFAR
+
+all in capital letters
+
+The result pictures will be found inside of folder Images
+
+
+After training, if you wanna to use the generator independently, you need two components below:
+1. the Generator.py
+2. the latest trained model weight : 
+	CIFAR_generator_latest.pth or MNIST_generator_latest.pth
+  they are located in folder Models
+
+There is a segment of sample code in report.py show you how to use the trained model
+
+
+
+Ensure the following libraries are installed to run the GAN
+
+Pytorch
+Numpy
+matplotlib
