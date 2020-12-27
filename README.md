@@ -31,3 +31,10 @@ Ensure the following libraries are installed to run the GAN
   <li>Numpy</li>
   <li>matplotlib</li>
 </ol>
+
+This project was made by:
+<ol>
+  <li>Surbhi Yadav</li>
+  <li>Apoorva Sharma</li>
+  <li>Hua Wang</li>
+</ol>
